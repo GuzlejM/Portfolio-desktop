@@ -7,6 +7,9 @@ Dark Blue: #039be5
 
 */
 
+$color-white: snow;
+$color-black: black;
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +21,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: snow;
+    color: $color-white;
     padding: 30px;
 }
 
@@ -57,7 +60,7 @@ body {
 }
 
 .heading-primary {
-    color: snow;
+    color: $color-white;
     text-transform: uppercase;
     text-align: center;
 
