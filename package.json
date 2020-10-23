@@ -1,10 +1,10 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/GuzlejM/Portfolio/issues"
   },
-  "homepage": "https://github.com/GuzlejM/Portfolio#readme"
+  "homepage": "https://github.com/GuzlejM/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
