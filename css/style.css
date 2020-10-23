@@ -79,6 +79,20 @@ body {
 .btn-animated {
   animation: moveInBottom .5s east-out; }
 
+.row {
+  max-width: 114rem;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 80px; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - gutter-horizontal) / 2);
+    background-color: oragered;
+    float: left; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+
 .header {
   height: 92vh;
   background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.8), rgba(255, 255, 255, 0.1)), url(../img/hero.jpg);
