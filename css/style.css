@@ -86,12 +86,10 @@ body {
   margin-bottom: 80px; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-  .row .col-1-of-2 {
-    width: calc((100% - gutter-horizontal) / 2);
-    background-color: oragered;
-    float: left; }
-  .row:not(:last-child) {
-    margin-bottom: 6rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .header {
   height: 92vh;
