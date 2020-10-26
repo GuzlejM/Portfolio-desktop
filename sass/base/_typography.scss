@@ -3,7 +3,7 @@
     text-transform: uppercase;
     font-weight: 700;
     color: transparent;
-    background-image: linear-gradient(to right, black,lightgray);
+    background-image: linear-gradient(to right, $color-black, $color-grey);
     display: inline-block;
     background-clip: text;
     -webkit-background-clip: text;
