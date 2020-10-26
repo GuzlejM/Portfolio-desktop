@@ -17,5 +17,9 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    clip-path: polygon(0 10%, 100% 0, 100% 700px, 0 100%);
+    margin-top: -20vh;
+    & > * {
+    }
 }
 

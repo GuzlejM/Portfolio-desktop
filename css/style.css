@@ -83,17 +83,17 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 10px 20px rgba(128, 128, 128, 0.2); }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 5px 10px rgba(128, 128, 128, 0.2); }
 
 .btn-white {
-  background-color: #444444;
+  background-color: rgba(128, 128, 128, 0.5);
   color: snow; }
   .btn-white::after {
-    background-color: #444444; }
+    background-color: rgba(128, 128, 128, 0.5); }
 
 .btn::after {
   content: "";
@@ -165,7 +165,8 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
-  transition: .3s; }
+  transition: .3s;
+  border-radius: 10px; }
   .feature-box:hover {
     transform: translateY(-1.5rem); }
 
@@ -249,4 +250,6 @@ body {
   background-image: url(../img/features.jpg);
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+  clip-path: polygon(0 10%, 100% 0, 100% 700px, 0 100%);
+  margin-top: -20vh; }

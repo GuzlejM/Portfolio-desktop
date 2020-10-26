@@ -13,19 +13,19 @@
     }
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        box-shadow: 0 10px 20px rgba($color-grey, .2);
     }
     
     &:active {
         transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        box-shadow: 0 5px 10px rgba($color-grey, .2);
     }
     
     &-white {
-        background-color: #444444;
+        background-color: rgba($color-grey, .5);
         color: snow;
         &::after {
-            background-color: #444444;
+            background-color: rgba($color-grey, .5);
         }
     }
     
