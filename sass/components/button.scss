@@ -7,6 +7,7 @@
         border-radius: 100px;
         transition: all .2s;
         position: relative;
+        font-size: $default-font-size;
     
         animation: moveInBottom 1s ease-out;
     }
@@ -49,4 +50,31 @@
     &-animated {
         animation: moveInBottom .5s east-out;
     }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 1px solid black;
+        padding: 3px;
+        transition: all  .2s;
+
+    }
+
+    &:hover {
+        background-color: $color-grey;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+
 }

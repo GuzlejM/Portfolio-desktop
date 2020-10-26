@@ -3,21 +3,22 @@
     text-transform: uppercase;
     font-weight: 700;
     color: transparent;
-    background-image: linear-gradient(to right, black, gray);
+    background-image: linear-gradient(to right, black,lightgray);
     display: inline-block;
+    background-clip: text;
     -webkit-background-clip: text;
     
 }
 
 .heading-tertiary {
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
     color: black;
 }
 
 .paragraph {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: black;
     &:not(:last-child){
         margin-bottom: 3rem;
