@@ -1,8 +1,8 @@
 .row {
     max-width: 114rem;
-    background-color: black;
     margin: 0 auto;
     margin-bottom: 80px;
+    color: black;
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;

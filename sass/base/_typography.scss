@@ -8,3 +8,18 @@
     -webkit-background-clip: text;
     
 }
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    color: black;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
