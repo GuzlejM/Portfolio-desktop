@@ -19,7 +19,17 @@
     position: relative;
     clip-path: polygon(0 10%, 100% 0, 100% 700px, 0 100%);
     margin-top: -20vh;
-    & > * {
-    }
+}
+
+.section-skills {
+    background-color: $color-grey-light;
+    padding: 20rem 0 50rem 0;
+    margin-top: -20vh;
+    background-image: linear-gradient(
+        to left, 
+        rgba(255, 255, 255, 1),
+        rgba(0, 0, 0, 0.2)
+        
+    )
 }
 
