@@ -173,7 +173,8 @@ body {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  position: relative; }
+  position: relative;
+  height: 50rem; }
   .card-side {
     background-color: red;
     height: 50rem;

@@ -2,6 +2,7 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
+    height: 50rem;
 
     &-side {
         background-color: red;
@@ -14,7 +15,7 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 5px;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        box-shadow: 0 1.5rem 4rem rgba(black, .15);
 
         &-front {
             background-color: green;
