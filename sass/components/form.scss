@@ -10,11 +10,11 @@
         border-bottom: 3px solid transparent;
         width: 90%;
         display: block;
-        transition: all .3s;
+        transition: all .6s;
 
         &:focus {
             outline: none;
-            box-shadow: 0 1rem 2rem rgba($color-black, .3);
+            box-shadow: 0 .5rem 1rem rgba($color-black, .3);
             border-bottom: 3px solid green;
         }
 
