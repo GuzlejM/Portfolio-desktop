@@ -63,13 +63,13 @@ body {
     transform: translate(0); } }
 
 .u-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .u-margin-bottom-6 {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem !important; }
 
 .u-margin-bottom-2 {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -81,14 +81,14 @@ body {
   font-size: 1.6rem;
   animation: moveInBottom 1s ease-out;
   border: none;
-  cursor: pointer;
-  outline: none; }
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
 
