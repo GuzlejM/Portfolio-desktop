@@ -304,6 +304,41 @@ body {
     letter-spacing: 5px;
     animation: moveInRight 1s ease-out; }
 
+.footer {
+  padding: 15rem 0;
+  font-size: 1.4rem;
+  color: black; }
+  .footer-logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer-logo {
+    width: 15rem;
+    height: auto; }
+  .footer-navigation {
+    border-top: 1px solid black;
+    display: inline-block;
+    padding-top: 2rem; }
+  .footer-list {
+    list-style: none; }
+  .footer-item {
+    display: inline-block; }
+    .footer-item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer-link:link, .footer-link:visited {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .3s; }
+  .footer-link:hover, .footer-link:active {
+    transform: scale(1.1);
+    filter: drop-shadow(1rem 1rem 2rem rgba(0, 0, 0, 0.4)); }
+  .footer-copyright {
+    padding-top: 2rem;
+    border-top: 1px solid black;
+    color: inherit;
+    float: right; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 20rem 0;
