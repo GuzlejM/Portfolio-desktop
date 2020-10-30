@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/style.css">
+
+        <!-- FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     
     <title>GuzlejM - Portfolio</title>
 </head>
@@ -24,16 +27,16 @@
         <nav class="navigation-nav">
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a href="#" class="navigation-link">About me</a>
+                    <a href="#about" class="navigation-link">About me</a>
                 </li>
                 <li class="navigation-item">
-                    <a href="#" class="navigation-link">Projects</a>
+                    <a href="#projects" class="navigation-link">Projects</a>
                 </li>
                 <li class="navigation-item">
-                    <a href="#" class="navigation-link">Skills</a>
+                    <a href="#skills" class="navigation-link">Skills</a>
                 </li>
                 <li class="navigation-item">
-                    <a href="#" class="navigation-link">Contact me</a>
+                    <a href="#contact" class="navigation-link">Contact me</a>
                 </li>
             </ul>
         </nav>
@@ -45,7 +48,7 @@
         </div>
         <div class="text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary-main">Fullstack Web Developer</span><br>
+                <span class="heading-primary-main">Front-end Web Developer</span><br>
                 <span class="heading-primary-sub">The code is a written visualisation</span>
             </h1>
             <a href="#projects" class="btn btn-grey">Straight to the Projects</a>
@@ -53,39 +56,30 @@
     </header>
 
     <main>
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="u-center-text u-margin-bottom-6">
                 <h2 class="heading-secondary">
-                    Skills section
+                    About me
                 </h2>
             </div>
 
             <div class="row">
                 <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-2">Third Heading</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-2">Contacts</h3>
                     <p class="paragraph">
-                        Lorem ipsum dolor sit amet consectetur, 
-                        adipisicing elit. Soluta neque, reprehenderit 
-                        ipsa, nisi eos exercitationem numquam vel 
-                        voluptatum impedit ut officia sunt minima nulla 
-                        eaque tempora fuga earum alias eius!
+                        <i class="fas fa-map-marked-alt"></i> London E1<br>
+                        <i class="fas fa-phone-square-alt"></i> +44/7849 304 445<br>
+                        <i class="fas fa-envelope"></i> martin.guzlej@gmail.com<br>
+                        <i class="fab fa-github"></i> <a href="https://github.com/GuzlejM">github.com/GuzlejM</a><br>
+                        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/martin-guzlej-12359119b/">linkedin.com/in/martin-guzlej</a>
                     </p>
-                    <h3 class="heading-tertiary u-margin-bottom-2">Third Heading</h3>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet consectetur, 
-                        adipisicing elit. Soluta neque, reprehenderit 
-                        ipsa, nisi eos exercitationem numquam vel 
-                        voluptatum impedit ut officia sunt minima nulla 
-                        eaque tempora fuga earum alias eius!
-                    </p>
-                    <a href="#" class="btn-text">Learn more &rarr;</a>
                 </div>
                 <div class="col-1-of-2">
-                    <div class="composition">
-                        <img src="/img/sass.svg" alt="" class="composition-photo composition-photo-p1">
-                        <img src="/img/html.png" alt="" class="composition-photo composition-photo-p2">
-                        <img src="/img/css.png" alt="" class="composition-photo composition-photo-p3">
-                    </div> 
+                    <h3 class="heading-tertiary u-margin-bottom-2">A few words</h3>
+                    <p class="paragraph">
+                        Javascript Web Developer, experienced in Front-end and Back-end technologies.Interested in a long term position with potential growth. 
+ 
+                    </p>
                 </div>
             </div>
         </section>
@@ -136,7 +130,7 @@
             </div>
         </section>
 
-        <section class="section-skills">
+        <section class="section-skills" id="skills">
             <div class="u-center-text u-margin-bottom-6">
                 <h2 class="heading-secondary">
                     Skills section
@@ -147,37 +141,49 @@
 
                     <div class="card">
                         <div class="card-side card-side-front">
-                            Front
+                            <span class="card-text">Front-end</span> 
                         </div>
                         <div class="card-side card-side-back">
-                            Back
+                            <div class="composition">
+                                <img src="/img/sass.svg" alt="" class="composition-photo composition-photo-p1">
+                                <img src="/img/html.png" alt="" class="composition-photo composition-photo-p2">
+                                <img src="/img/css.png" alt="" class="composition-photo composition-photo-p3">
+                            </div> 
                         </div>
                     </div>
                 </div>
                 <div class="col-1-of-3">
                     <div class="card">
                         <div class="card-side card-side-front">
-                            Front
+                            <span class="card-text">Back-end</span> 
                         </div>
                         <div class="card-side card-side-back">
-                            Back
+                            <div class="composition">
+                                <img src="/img/node.webp" alt="" class="composition-photo composition-photo-p1">
+                                <img src="/img/express.png" alt="" class="composition-photo composition-photo-p2">
+                                <img src="/img/fastify.png" alt="" class="composition-photo composition-photo-p3">
+                            </div> 
                         </div>
                     </div> 
                 </div>
                 <div class="col-1-of-3">
                     <div class="card">
                         <div class="card-side card-side-front">
-                            Front
+                            <span class="card-text">Tools</span>
                         </div>
                         <div class="card-side card-side-back">
-                            Back
+                            <div class="composition">
+                                <img src="/img/vercel.png" alt="" class="composition-photo composition-photo-p1">
+                                <img src="/img/github.png" alt="" class="composition-photo composition-photo-p2">
+                                <img src="/img/heroku.webp" alt="" class="composition-photo composition-photo-p3">
+                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-book">
+        <section class="section-book" id="contact">
             <div class="row">
                 <div class="book">
                     <div class="book-form">

@@ -3,6 +3,12 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
+    text-align: center;
+
+    &-text {
+        position: absolute;
+        top: 45%;
+    }
 
     &-side {
         background-color: red;
@@ -18,12 +24,15 @@
         box-shadow: 0 1.5rem 4rem rgba(black, .15);
 
         &-front {
-            background-color: green;
+            background-color: white;
+
+
         }
 
         &-back {
-            background-color: skyblue;
+            background-color: white;
             transform: rotateY(180deg);
+            text-align: center;
         }
     }
 

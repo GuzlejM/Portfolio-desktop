@@ -137,23 +137,13 @@ body {
   transform: translateY(0); }
 
 .composition {
-  position: relative; }
+  position: relative;
+  margin-top: 35px; }
   .composition-photo {
-    width: 55%;
+    width: 30%;
     height: auto;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
-    position: absolute;
-    transition: all .3s;
-    z-index: 1; }
-    .composition-photo-p1 {
-      left: 0;
-      top: -2rem; }
-    .composition-photo-p2 {
-      right: 2rem;
-      top: -2rem; }
-    .composition-photo-p3 {
-      left: 20%;
-      top: 10rem; }
+    transition: all .3s; }
     .composition-photo:hover {
       transform: scale(1.1);
       filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.9));
@@ -177,7 +167,11 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  text-align: center; }
+  .card-text {
+    position: absolute;
+    top: 45%; }
   .card-side {
     background-color: red;
     height: 50rem;
@@ -190,10 +184,11 @@ body {
     border-radius: 5px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card-side-front {
-      background-color: green; }
+      background-color: white; }
     .card-side-back {
-      background-color: skyblue;
-      transform: rotateY(180deg); }
+      background-color: white;
+      transform: rotateY(180deg);
+      text-align: center; }
   .card:hover .card-side-front {
     transform: rotateY(-180deg); }
   .card:hover .card-side-back {

@@ -1,25 +1,12 @@
 .composition {
     position: relative;
+    margin-top: 35px;
     &-photo {
-        width: 55%;
+        width: 30%;
         height: auto;
         filter:drop-shadow(5px 5px 10px rgba($color-black, .7));        
-        position: absolute;
         transition: all .3s;
-        z-index: 1;
 
-        &-p1 {
-            left: 0;
-            top: -2rem;
-        }
-        &-p2 {
-            right: 2rem;
-            top: -2rem;
-        }
-        &-p3 {
-            left: 20%;
-            top: 10rem;
-        }
         &:hover {
             transform: scale(1.1);
             filter:drop-shadow(15px 15px 10px rgba($color-black, .9));
