@@ -256,17 +256,20 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(snow, grey, black);
+  background-image: radial-gradient(snow, grey);
   z-index: 10;
-  transform: scale(80); }
+  opacity: .95;
+  transition: transform .8s; }
 
 .navigation-nav {
   height: 100%;
-  width: 100%;
   position: fixed;
   top: 0;
-  right: 0;
-  z-index: 140; }
+  left: 0;
+  z-index: 140;
+  opacity: 0;
+  width: 0;
+  transition: all .8s; }
 
 .navigation-list {
   position: absolute;
@@ -276,19 +279,29 @@ body {
   list-style: none;
   text-align: center; }
 
-.navigation-link:link, .navigation-link:visited {
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: snow;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, snow 50%);
-  background-size: 225%;
-  transition: all .4s; }
+.navigation-link {
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.6)); }
+  .navigation-link:link, .navigation-link:visited {
+    font-size: 4rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: snow;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, snow 50%);
+    background-size: 225%;
+    transition: all .4s; }
+  .navigation-link:hover, .navigation-link:active {
+    background-position: 100%;
+    color: black;
+    transform: translateX(1rem); }
 
-.navigation-link:hover, .navigation-link:active {
-  background-position: 100%; }
+.navigation-checkbox:checked ~ .navigation-background {
+  transform: scale(80); }
+
+.navigation-checkbox:checked ~ .navigation-nav {
+  opacity: 1;
+  width: 100%; }
 
 .row {
   max-width: 114rem;
