@@ -19,7 +19,7 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba($color-black, .4);
         }
-        
+
         &:active,
         &:focus {
         outline: none;
@@ -110,6 +110,7 @@
            height: 2px;
            background-color: $color-black;
            display: inline-block;
+           transition: all .2s;
        }
 
        &::before,
@@ -119,7 +120,21 @@
            left: 0;
        }
 
-       &::before { top: -1rem; }
-       &::after { top: 1rem; }
+       &::before { top: -.9rem; }
+       &::after { top: .9rem; }
+    }
+
+    &-checkbox:checked + &-button &-icon {
+        background-color: transparent;
+    }
+    &-checkbox:checked + &-button &-icon::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: .8s;
+    }
+    &-checkbox:checked + &-button &-icon::after {
+        top: 0;
+        transform: rotate(-45deg);
+        transition: .8s;
     }
 }

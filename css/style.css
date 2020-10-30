@@ -320,15 +320,29 @@ body {
     width: 3rem;
     height: 2px;
     background-color: black;
-    display: inline-block; }
+    display: inline-block;
+    transition: all .2s; }
   .navigation-icon::before, .navigation-icon::after {
     content: "";
     position: absolute;
     left: 0; }
   .navigation-icon::before {
-    top: -1rem; }
+    top: -.9rem; }
   .navigation-icon::after {
-    top: 1rem; }
+    top: .9rem; }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon {
+  background-color: transparent; }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: .8s; }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: .8s; }
 
 .row {
   max-width: 114rem;
