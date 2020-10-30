@@ -236,6 +236,29 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.navigation-checkbox {
+  display: none; }
+
+.navigation-button {
+  background-color: snow;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 11; }
+
+.navigation-background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(snow, grey, black);
+  z-index: 10; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
