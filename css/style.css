@@ -247,7 +247,17 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 150; }
+  z-index: 150;
+  text-align: center;
+  box-shadow: 1px 1px 5px black; }
+  .navigation-button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); }
+  .navigation-button:active, .navigation-button:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
 
 .navigation-background {
   height: 6rem;
@@ -259,7 +269,7 @@ body {
   background-image: radial-gradient(snow, grey);
   z-index: 10;
   opacity: .95;
-  transition: transform .8s; }
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .navigation-nav {
   height: 100%;
@@ -269,7 +279,7 @@ body {
   z-index: 140;
   opacity: 0;
   width: 0;
-  transition: all .8s; }
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation-list {
   position: absolute;
@@ -302,6 +312,23 @@ body {
 .navigation-checkbox:checked ~ .navigation-nav {
   opacity: 1;
   width: 100%; }
+
+.navigation-icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation-icon, .navigation-icon::before, .navigation-icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: black;
+    display: inline-block; }
+  .navigation-icon::before, .navigation-icon::after {
+    content: "";
+    position: absolute;
+    left: 0; }
+  .navigation-icon::before {
+    top: -1rem; }
+  .navigation-icon::after {
+    top: 1rem; }
 
 .row {
   max-width: 114rem;
