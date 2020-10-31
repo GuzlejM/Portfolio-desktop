@@ -129,11 +129,11 @@
     &-checkbox:checked + &-button &-icon::before {
         transform: rotate(45deg);
         top: 0;
-        transition: .8s;
+        transition: .4s;
     }
     &-checkbox:checked + &-button &-icon::after {
         top: 0;
         transform: rotate(-45deg);
-        transition: .8s;
+        transition: .4s;
     }
 }

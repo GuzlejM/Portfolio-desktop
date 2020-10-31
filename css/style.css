@@ -5,6 +5,12 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -447,12 +453,12 @@ body {
 .navigation-checkbox:checked + .navigation-button .navigation-icon::before {
   transform: rotate(45deg);
   top: 0;
-  transition: .8s; }
+  transition: .4s; }
 
 .navigation-checkbox:checked + .navigation-button .navigation-icon::after {
   top: 0;
   transform: rotate(-45deg);
-  transition: .8s; }
+  transition: .4s; }
 
 .row {
   max-width: 114rem;
